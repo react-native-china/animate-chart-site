@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <doc-nav></doc-nav>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import DocNav from './components/DocNav'
+
 export default {
+  components:{
+    'doc-nav':DocNav
+  },
   name: 'app'
 }
 </script>
@@ -18,6 +23,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
