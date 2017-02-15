@@ -1,10 +1,10 @@
 <template>
-	<span>Good</span>
+	<span>asdasd</span>
 </template>
 
 <script>
 	export default {
-		name:'index'
+		name:'docs'
 	}
 </script>
 

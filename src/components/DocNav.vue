@@ -1,8 +1,8 @@
 <template>
 	<nav>
 		<ul>
-			<li v-for="item in menulist">
-				<a href="good" v-link="{path:'good'}">{{ item }}</a>
+			<li v-for="(item,key) in menulist">
+				<a :href="key" v-link="{path:key}">{{ item }}</a>
 			</li>
 		</ul>
 	</nav>
@@ -15,8 +15,7 @@
 			return {
 				menulist:{
 					index:"首页",
-					usage:"起步",
-					usage:"文档"
+					docs:"起步",
 				}
 			}
 		}
@@ -43,5 +42,9 @@
 
 	nav > ul > li {
 		flex:1;
+	}
+
+	nav{
+		padding: 10px 100px 0 100px;
 	}
 </style>
